@@ -1,0 +1,12 @@
+<h1>Home</h1>
+
+<% if user_signed_in? %>
+  <p>You are signed in.</p>
+<% else -%>
+  <p><%= link_to "Sign in", new_user_session_path %></p>
+<% end -%>
+
+<p>Users: <%= User.count %></p>
+<p>Auths: <%= Authentication.count %></p>
+
+<%= Authentication.first.inspect %>
