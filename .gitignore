@@ -1,3 +1,5 @@
 log/*.log
 config/config.yml
 .bundle
+*.tmproj
+tmp
